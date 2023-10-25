@@ -8,8 +8,9 @@ const notificationService = {
             topic: "notification-topic",
             messages: [
             { value: JSON.stringify(notification) }
-            ]
+            ],
         });
+        await producer.disconnect();
     }
 }
 
